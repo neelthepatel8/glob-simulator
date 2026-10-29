@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bnuv8ja3ilr03"]
+
+[ext_resource type="Texture2D" uid="uid://b06bikmy35vic" path="res://glob.png" id="1_heo6u"]
+[ext_resource type="Script" uid="uid://y027xfoi2fli" path="res://glob.gd" id="1_txij2"]
+
+[node name="Glob" type="Sprite2D" unique_id=398182980]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_heo6u")
+script = ExtResource("1_txij2")
