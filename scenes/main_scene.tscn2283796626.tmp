@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c2lksib0xqpre"]
+
+[ext_resource type="Script" uid="uid://dc5yr1kupb1wj" path="res://Manager.gd" id="1_pw63i"]
+[ext_resource type="Resource" uid="uid://dgbe3y3uqgt2s" path="res://scenes/config.tres" id="2_pw63i"]
+
+[node name="Main Scene" type="Node2D" unique_id=1787418238]
+script = ExtResource("1_pw63i")
+CONFIG = ExtResource("2_pw63i")

@@ -3,16 +3,13 @@ class_name GlobImpl
 var health: int
 var location: Coordinate
 var search_distance: int
-var xmax: int
-var ymax: int
 var active = true
+var window_size = DisplayServer.window_get_size()
 
-func _init(initial_location: Coordinate, x_max: int, y_max: int) -> void:
+func _init(initial_location: Coordinate) -> void:
 	health = 10
 	location = initial_location
 	search_distance = 50
-	xmax = x_max
-	ymax = y_max
 	
 func _move_to(new_location: Coordinate):
 	print("Moving to %s" % new_location)
@@ -25,7 +22,7 @@ func _next_location() -> Coordinate:
 	# give it a maximum of 1000 attempts
 	while true:
 		# generate a random point in rectangle of bounds
-		var possible_point = Coordinate.random(xmax, ymax)
+		var possible_point = Coordinate.random(window_size.x, window_size.y)
 
 		# check if point is in circle
 		if location.distance(possible_point) <= search_distance:

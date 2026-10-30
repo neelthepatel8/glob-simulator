@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c2lksib0xqpre"]
+
+[ext_resource type="Script" uid="uid://dc5yr1kupb1wj" path="res://Manager.gd" id="1_pw63i"]
+[ext_resource type="Resource" uid="uid://dgbe3y3uqgt2s" path="res://scenes/config.tres" id="2_pw63i"]
+[ext_resource type="PackedScene" uid="uid://bnuv8ja3ilr03" path="res://scenes/glob.tscn" id="3_pu3yx"]
+[ext_resource type="PackedScene" uid="uid://dffu1bascekq2" path="res://scenes/food.tscn" id="4_gubc5"]
+[ext_resource type="Script" uid="uid://y027xfoi2fli" path="res://entities/glob.gd" id="4_rt2n2"]
+[ext_resource type="Script" uid="uid://7tqpc8xrv8jm" path="res://entities/FoodPOI.gd" id="6_rt2n2"]
+
+[node name="Main" type="Node2D" unique_id=1787418238]
+script = ExtResource("1_pw63i")
+CONFIG = ExtResource("2_pw63i")
+
+[node name="Glob" parent="." unique_id=138225273 instance=ExtResource("3_pu3yx")]
+position = Vector2(453, 314)
+script = ExtResource("4_rt2n2")
+
+[node name="Food" parent="." unique_id=398182980 groups=["poi"] instance=ExtResource("4_gubc5")]
+position = Vector2(663, 316)
+script = ExtResource("6_rt2n2")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c2lksib0xqpre"]
+
+[ext_resource type="Script" uid="uid://dc5yr1kupb1wj" path="res://scenes/World/WorldView.gd" id="1_egms7"]
+
+[node name="WorldView" type="Node2D" unique_id=1787418238]
+script = ExtResource("1_egms7")

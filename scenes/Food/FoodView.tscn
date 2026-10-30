@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dffu1bascekq2"]
+
+[ext_resource type="Texture2D" uid="uid://bsitd43gewlc" path="res://assets/food.png" id="1_pohk7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xven1"]
+atlas = ExtResource("1_pohk7")
+region = Rect2(4, 74, 62, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_af40f"]
+atlas = ExtResource("1_pohk7")
+region = Rect2(66, 74, 62, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_370ap"]
+atlas = ExtResource("1_pohk7")
+region = Rect2(128, 74, 62, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qjm1k"]
+atlas = ExtResource("1_pohk7")
+region = Rect2(190, 74, 62, 92)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1c6if"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xven1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_af40f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_370ap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qjm1k")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Food" type="Node2D" unique_id=1682153606]
+
+[node name="Food" type="AnimatedSprite2D" parent="." unique_id=380860048]
+scale = Vector2(0.705, 0.705)
+sprite_frames = SubResource("SpriteFrames_1c6if")
+autoplay = "default"
